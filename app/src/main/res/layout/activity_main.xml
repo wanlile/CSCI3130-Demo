@@ -6,13 +6,53 @@
     android:layout_height="match_parent"
     tools:context="com.example.acme.csci3130_demo.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/EnterText"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginBottom="262dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="266dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.23000002" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="144dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="380dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="44dp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EnterText" />
+
+    <Button
+        android:id="@+id/but"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="39dp"
+        android:layout_marginEnd="185dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="90dp"
+        android:text="@string/button"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toEndOf="@+id/EnterText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65999997" />
 
 </android.support.constraint.ConstraintLayout>
